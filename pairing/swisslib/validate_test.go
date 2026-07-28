@@ -94,3 +94,51 @@ func TestValidatePairing_MissingPlayer(t *testing.T) {
 		t.Error("missing players should fail validation")
 	}
 }
+
+// Added in the analyzethat fork.
+
+func TestValidatePairing_TooManyByes(t *testing.T) {
+	// Handing every player a pairing-allocated bye accounts for all of them
+	// exactly once, so every other check passes. It still means the pairer
+	// paired nobody.
+	players := []PlayerState{
+		{ID: "p1", Active: true},
+		{ID: "p2", Active: true},
+		{ID: "p3", Active: true},
+		{ID: "p4", Active: true},
+	}
+	result := &chesspairing.PairingResult{
+		Byes: []chesspairing.ByeEntry{
+			{PlayerID: "p1", Type: chesspairing.ByePAB},
+			{PlayerID: "p2", Type: chesspairing.ByePAB},
+			{PlayerID: "p3", Type: chesspairing.ByePAB},
+			{PlayerID: "p4", Type: chesspairing.ByePAB},
+		},
+	}
+	if err := ValidatePairing(players, result); err == nil {
+		t.Error("four byes for four players should fail validation")
+	}
+}
+
+func TestValidateResult_IgnoresPreAssignedByes(t *testing.T) {
+	// Pre-assigned byes are the caller's input: those players never entered
+	// the matching pool, so they must not be held against the pairer.
+	players := []PlayerState{
+		{ID: "p1", Active: true},
+		{ID: "p2", Active: true},
+	}
+	preAssigned := []chesspairing.ByeEntry{{PlayerID: "p3", Type: chesspairing.ByeHalf}}
+	result := &chesspairing.PairingResult{
+		Pairings: []chesspairing.GamePairing{{Board: 1, WhiteID: "p1", BlackID: "p2"}},
+		Byes:     preAssigned,
+	}
+	if err := ValidateResult(players, preAssigned, result); err != nil {
+		t.Errorf("pre-assigned bye should not fail validation: %v", err)
+	}
+}
+
+func TestValidateResult_NilResult(t *testing.T) {
+	if err := ValidateResult(nil, nil, nil); err == nil {
+		t.Error("nil result should fail validation")
+	}
+}

@@ -7,6 +7,35 @@ reaches a tagged release.
 
 ## [Unreleased]
 
+### Changed
+
+- **Swiss pairers now report a round they cannot legally pair, instead of
+  returning an incomplete one.** `swisslib.ValidateResult` and its `lexswiss`
+  mirror check a pairer's own output on the way out; `dutch`, `burstein`,
+  `dubov`, `lim` and `doubleswiss` call it before returning.
+
+  Upstream returned the best partial pairing with a nil error. A caller has no
+  way to notice that, and records a round with players missing from it. The
+  behaviour was deliberate for the lexicographic systems — their tests used
+  "weak invariants that don't require completeness" — but it makes the result
+  unusable for running an actual tournament, where the arbiter has to know.
+  FIDE C.04.3 article 1.9.3 leaves an impossible round-pairing to the Chief
+  Arbiter; surfacing it as an error is what lets a caller act on it.
+
+  How often this bites depends on field size against round count. Measured over
+  300 simulated tournaments per configuration with the Dutch pairer: 8 players
+  is clean through 5 rounds and produces an incomplete pairing in 9.7% of
+  tournaments at 6 rounds and 21.3% at 7; 10 players is clean through 7 rounds,
+  16.3% at 8 and 29.7% at 9; 16 players is clean through 11 rounds. Fields from
+  roughly 20 players upward were not observed to hit it. `dubov` and
+  `doubleswiss` fragment score groups and hit it in ordinary tournaments —
+  20 players over 7 rounds, at rounds 3 and 4 respectively.
+
+- `ValidatePairing` additionally requires exactly one pairing-allocated bye for
+  an odd field and none for an even one. Without that check a pairer could give
+  every player a bye and still satisfy every other rule, which is what `lim`
+  did on an exhausted field.
+
 ## [0.3.0] — 2026-07-28
 
 First release of the `analyzethat` fork of

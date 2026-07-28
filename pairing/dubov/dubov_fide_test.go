@@ -457,13 +457,16 @@ func TestFIDE_Dubov_LargeTournament_20Players7Rounds(t *testing.T) {
 
 		result, err := pairer.Pair(context.Background(), state)
 		if err != nil {
-			t.Fatalf("round %d error: %v", round, err)
+			// Fork change: score-group fragmentation can leave the Dubov
+			// pairer unable to cover the field. Upstream returned the best
+			// partial pairing with a nil error, which silently drops players
+			// from the round; it is now reported. The tournament stops here.
+			t.Logf("round %d cannot be paired: %v", round, err)
+			break
 		}
 
-		// The Dubov pairer may produce partial pairings in later rounds
-		// when score group fragmentation makes complete matching impossible.
-		// Use weak invariants that don't require completeness.
-		assertWeakInvariants(t, state, result)
+		// Every round that does get paired must be complete.
+		swisslib.AssertPairingInvariants(t, state, result)
 
 		// Simulate: higher-rated wins.
 		games := make([]chesspairing.GameData, len(result.Pairings))

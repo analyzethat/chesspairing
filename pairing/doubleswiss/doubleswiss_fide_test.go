@@ -19,10 +19,13 @@ import (
 // With 6 players and deterministic "higher-rated wins" results, the
 // lexicographic pairer produces 3 complete pairings for rounds 1–3. In
 // rounds 4–5 the spread of scores creates singleton brackets that cannot
-// always upfloat, so partial pairings are expected (and correct per the
-// algorithm's spec — it returns the best partial pairing when no complete
-// one exists). We verify strict invariants for R1–R3 and weaker invariants
-// (no duplicate, no inactive, no self-pairing) for R4–R5.
+// always upfloat, so no complete pairing exists.
+//
+// Fork change: upstream returned the best partial pairing with a nil error
+// for those rounds. That silently leaves active players out of a round, which
+// a caller running a real tournament has no way to notice. The pairer now
+// reports it and the round is not paired. Rounds that do get paired are held
+// to the strict invariants.
 func TestFIDE_DoubleSwiss_6Player5Round(t *testing.T) {
 	totalRounds := 5
 	pairer := New(Options{TotalRounds: &totalRounds})
@@ -48,27 +51,23 @@ func TestFIDE_DoubleSwiss_6Player5Round(t *testing.T) {
 		state.CurrentRound = round
 		result, err := pairer.Pair(context.Background(), state)
 		if err != nil {
-			t.Fatalf("round %d: Pair() error: %v", round, err)
+			if round <= 3 {
+				t.Fatalf("round %d should be pairable: %v", round, err)
+			}
+			t.Logf("round %d cannot be paired: %v", round, err)
+			break
 		}
 
-		// Strict structural invariants hold regardless of partial pairing.
-		assertWeakInvariants(t, state, result)
+		// Every round that gets paired must be complete.
+		swisslib.AssertPairingInvariants(t, state, result)
 
-		// Rounds 1–3 should produce complete pairings (3 games, 0 byes).
+		// Rounds 1–3 produce three games and no byes.
 		if round <= 3 {
-			swisslib.AssertPairingInvariants(t, state, result)
 			if len(result.Pairings) != 3 {
 				t.Errorf("round %d: expected 3 pairings, got %d", round, len(result.Pairings))
 			}
 			if len(result.Byes) != 0 {
 				t.Errorf("round %d: expected 0 byes, got %d", round, len(result.Byes))
-			}
-		}
-
-		// Rounds 4–5: partial pairings are acceptable, but at least 2 pairings expected.
-		if round >= 4 {
-			if len(result.Pairings) < 2 {
-				t.Errorf("round %d: expected at least 2 pairings, got %d", round, len(result.Pairings))
 			}
 		}
 
@@ -636,14 +635,17 @@ func TestFIDE_DoubleSwiss_LargeTournament_20Players7Rounds(t *testing.T) {
 
 		result, err := pairer.Pair(context.Background(), state)
 		if err != nil {
-			t.Fatalf("round %d error: %v", round, err)
+			// Fork change: see the note in the 6-player test. An incomplete
+			// pairing is reported instead of returned.
+			t.Logf("round %d cannot be paired: %v", round, err)
+			break
 		}
 
 		if len(result.Pairings) < 1 {
 			t.Fatalf("round %d: expected at least 1 pairing, got 0", round)
 		}
 
-		assertWeakInvariants(t, state, result)
+		swisslib.AssertPairingInvariants(t, state, result)
 		assertNoRematches(t, state, result, round)
 
 		// Simulate: higher-rated wins.

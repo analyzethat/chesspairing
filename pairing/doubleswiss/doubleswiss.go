@@ -99,6 +99,12 @@ func (p *Pairer) Pair(_ context.Context, state *chesspairing.TournamentState) (*
 		result.Byes = append(preAssignedByes, result.Byes...)
 	}
 
+	// Report a field that cannot be legally paired instead of returning a
+	// round with participants missing from it.
+	if err := lexswiss.ValidateResult(participants, preAssignedByes, result); err != nil {
+		return nil, err
+	}
+
 	return result, nil
 }
 
