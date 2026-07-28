@@ -485,60 +485,6 @@ func TestFIDE_Dubov_LargeTournament_20Players7Rounds(t *testing.T) {
 	}
 }
 
-// assertWeakInvariants checks invariants that hold even for partial pairings:
-// no duplicate, no inactive paired, no self-pairing, no rematches. Does NOT
-// require every active player to be paired.
-func assertWeakInvariants(t *testing.T, state *chesspairing.TournamentState, result *chesspairing.PairingResult) {
-	t.Helper()
-
-	activeIDs := make(map[string]bool)
-	for _, p := range state.Players {
-		if state.IsActiveInRound(p.ID, state.CurrentRound) {
-			activeIDs[p.ID] = true
-		}
-	}
-
-	seen := make(map[string]int)
-	for i, gp := range result.Pairings {
-		seen[gp.WhiteID]++
-		seen[gp.BlackID]++
-		if gp.WhiteID == gp.BlackID {
-			t.Errorf("pairing[%d]: player %s paired against themselves", i, gp.WhiteID)
-		}
-	}
-	for _, bye := range result.Byes {
-		seen[bye.PlayerID]++
-	}
-
-	for id, count := range seen {
-		if count != 1 {
-			t.Errorf("player %s appears %d times in pairings+byes (expected 1)", id, count)
-		}
-	}
-	for id := range seen {
-		if !activeIDs[id] {
-			t.Errorf("inactive player %s found in pairings or byes", id)
-		}
-	}
-
-	// No rematches.
-	prevPairs := make(map[[2]string]bool)
-	for _, rd := range state.Rounds {
-		for _, g := range rd.Games {
-			if g.IsForfeit {
-				continue
-			}
-			prevPairs[swisslib.CanonicalPairKey(g.WhiteID, g.BlackID)] = true
-		}
-	}
-	for _, gp := range result.Pairings {
-		key := swisslib.CanonicalPairKey(gp.WhiteID, gp.BlackID)
-		if prevPairs[key] {
-			t.Errorf("rematch detected: %s vs %s", gp.WhiteID, gp.BlackID)
-		}
-	}
-}
-
 // ---------------------------------------------------------------------------
 // Test 7: MaxT function — table-driven
 // ---------------------------------------------------------------------------

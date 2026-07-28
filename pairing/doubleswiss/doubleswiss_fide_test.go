@@ -529,44 +529,6 @@ func TestFIDE_DoubleSwiss_BlackWins(t *testing.T) {
 
 // --- Helpers ---
 
-// assertWeakInvariants checks invariants that hold even for partial pairings:
-// no duplicate, no inactive paired, no self-pairing. Does NOT require every
-// active player to be paired (the lexicographic pairer may legitimately
-// produce partial pairings when no complete matching exists).
-func assertWeakInvariants(t *testing.T, state *chesspairing.TournamentState, result *chesspairing.PairingResult) {
-	t.Helper()
-
-	activeIDs := make(map[string]bool)
-	for _, p := range state.Players {
-		if state.IsActiveInRound(p.ID, state.CurrentRound) {
-			activeIDs[p.ID] = true
-		}
-	}
-
-	seen := make(map[string]int)
-	for i, gp := range result.Pairings {
-		seen[gp.WhiteID]++
-		seen[gp.BlackID]++
-		if gp.WhiteID == gp.BlackID {
-			t.Errorf("pairing[%d]: self-pairing %s", i, gp.WhiteID)
-		}
-	}
-	for _, bye := range result.Byes {
-		seen[bye.PlayerID]++
-	}
-
-	for id, count := range seen {
-		if count != 1 {
-			t.Errorf("player %s appears %d times", id, count)
-		}
-	}
-	for id := range seen {
-		if !activeIDs[id] {
-			t.Errorf("inactive player %s paired", id)
-		}
-	}
-}
-
 // assertNoRematches verifies that no pairing in the result is a rematch
 // of a game from a previous round (excluding forfeits, which are not in
 // opponent history and thus allowed).
