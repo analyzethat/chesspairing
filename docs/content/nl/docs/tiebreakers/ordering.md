@@ -51,8 +51,8 @@ Gebruikt de geregistreerde rating van de speler als tiebreakwaarde. Een hogere r
 import (
     "context"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Pairing Number (lower TPN = higher value)

@@ -9,7 +9,7 @@
 package dutch
 
 import (
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 // Pairer implements the chesspairing.Pairer interface for FIDE Dutch Swiss pairing.

@@ -11,11 +11,11 @@ For anything you would not want to disclose in public — credential leaks,
 remote code execution paths, parser exploits with security implications —
 please use GitHub's private vulnerability reporting:
 
-<https://github.com/gnutterts/chesspairing/security/advisories/new>
+<https://github.com/analyzethat/chesspairing/security/advisories/new>
 
 For everything else (including correctness bugs in pairings, scoring, or
 tiebreakers), open a public issue at
-<https://github.com/gnutterts/chesspairing/issues>.
+<https://github.com/analyzethat/chesspairing/issues>.
 
 ## Scope
 

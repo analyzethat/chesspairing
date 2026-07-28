@@ -3,7 +3,7 @@
 
 package team
 
-import "github.com/gnutterts/chesspairing/pairing/lexswiss"
+import "github.com/analyzethat/chesspairing/pairing/lexswiss"
 
 // BuildCriteriaFunc creates a lexswiss.CriteriaFunc that checks Team Swiss
 // quality criteria C8 and C9 for a proposed pair.

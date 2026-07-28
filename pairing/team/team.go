@@ -7,8 +7,8 @@ import (
 	"context"
 	"sort"
 
-	"github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/pairing/lexswiss"
+	"github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/pairing/lexswiss"
 )
 
 // Pair implements chesspairing.Pairer for the Team Swiss system.

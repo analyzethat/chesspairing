@@ -6,7 +6,7 @@ package lim
 import (
 	"testing"
 
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 func TestPairFloaters_DownFloaterHighestTarget(t *testing.T) {

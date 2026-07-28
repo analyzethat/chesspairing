@@ -6,7 +6,7 @@ package chesspairing_test
 import (
 	"testing"
 
-	cp "github.com/gnutterts/chesspairing"
+	cp "github.com/analyzethat/chesspairing"
 )
 
 func TestParseScoringSystem(t *testing.T) {

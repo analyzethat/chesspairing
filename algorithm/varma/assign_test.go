@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 func TestAssignBasicFederationSeparation(t *testing.T) {

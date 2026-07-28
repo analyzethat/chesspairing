@@ -5,7 +5,7 @@ weight: 2
 description: "Version history and notable changes."
 ---
 
-The canonical changelog lives in [`CHANGELOG.md`](https://github.com/gnutterts/chesspairing/blob/main/CHANGELOG.md) at the repository root. It follows a loose [Keep a Changelog](https://keepachangelog.com/) format and Semantic Versioning.
+The canonical changelog lives in [`CHANGELOG.md`](https://github.com/analyzethat/chesspairing/blob/main/CHANGELOG.md) at the repository root. It follows a loose [Keep a Changelog](https://keepachangelog.com/) format and Semantic Versioning.
 
 ## Latest release: v0.2.0 (2026-04-20)
 

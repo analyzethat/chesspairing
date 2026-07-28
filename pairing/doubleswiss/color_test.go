@@ -6,7 +6,7 @@ package doubleswiss
 import (
 	"testing"
 
-	"github.com/gnutterts/chesspairing/pairing/lexswiss"
+	"github.com/analyzethat/chesspairing/pairing/lexswiss"
 )
 
 func TestAllocateColor_Round1_OddBoard(t *testing.T) {

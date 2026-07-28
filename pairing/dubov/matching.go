@@ -6,7 +6,7 @@ package dubov
 import (
 	"sort"
 
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 // matchContext holds the state needed for Dubov bracket matching.

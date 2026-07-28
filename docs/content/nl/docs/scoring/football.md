@@ -30,7 +30,7 @@ chesspairing pair --config '{"scoring": {"pointWin": 3.0, "pointDraw": 1.0}}' to
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/football"
+import "github.com/analyzethat/chesspairing/scoring/football"
 
 // Met alle standaardwaarden (3-1-0).
 scorer := football.New(standard.Options{})

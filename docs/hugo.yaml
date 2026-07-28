@@ -43,7 +43,7 @@ languages:
           identifier: api
         - name: GitHub
           weight: 100
-          url: https://github.com/gnutterts/chesspairing
+          url: https://github.com/analyzethat/chesspairing
           identifier: github
           params:
             external: true
@@ -87,7 +87,7 @@ languages:
           identifier: api
         - name: GitHub
           weight: 100
-          url: https://github.com/gnutterts/chesspairing
+          url: https://github.com/analyzethat/chesspairing
           identifier: github
           params:
             external: true
@@ -133,7 +133,7 @@ params:
   version: v0.1.3
   copyright: Gert Nutterts
 
-  github_repo: https://github.com/gnutterts/chesspairing
+  github_repo: https://github.com/analyzethat/chesspairing
   github_subdir: docs
   github_branch: main
 
@@ -150,7 +150,7 @@ params:
   links:
     user:
       - name: GitHub
-        url: https://github.com/gnutterts/chesspairing
+        url: https://github.com/analyzethat/chesspairing
         icon: fab fa-github
         desc: Source code on GitHub
 

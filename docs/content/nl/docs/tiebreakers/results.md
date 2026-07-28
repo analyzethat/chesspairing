@@ -134,8 +134,8 @@ Alleen partijen aan het bord tellen mee (via `buildOpponentData()`). Forfaits, b
 import (
     "context"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Games Won (OTB only)

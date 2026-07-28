@@ -6,7 +6,7 @@ package dubov
 import (
 	"testing"
 
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 func TestSplitG1G2_Round1(t *testing.T) {

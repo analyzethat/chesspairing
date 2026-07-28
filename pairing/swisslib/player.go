@@ -6,7 +6,7 @@ package swisslib
 import (
 	"sort"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 // Color represents a player's color assignment in a round.

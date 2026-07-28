@@ -23,7 +23,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 // Pairer implements the chesspairing.Pairer interface for round-robin pairing.

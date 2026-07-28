@@ -30,7 +30,7 @@ chesspairing pair --dubov tournament.trf
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/dubov"
+import "github.com/analyzethat/chesspairing/pairing/dubov"
 
 // Met getypeerde opties
 p := dubov.New(dubov.Options{

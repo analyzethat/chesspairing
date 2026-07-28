@@ -6,7 +6,7 @@ package team
 import (
 	"testing"
 
-	"github.com/gnutterts/chesspairing/pairing/lexswiss"
+	"github.com/analyzethat/chesspairing/pairing/lexswiss"
 )
 
 func TestAllocateColor_BothNewTeams_OddTPN(t *testing.T) {

@@ -48,14 +48,14 @@ Beide passen standaardwaarden toe voor niet-ingestelde (nil) velden. Zie [Optiep
 
 ### Standaard
 
-**Pakket:** `github.com/gnutterts/chesspairing/scoring/standard`
+**Pakket:** `github.com/analyzethat/chesspairing/scoring/standard`
 
 Standaard FIDE-scoring: vaste punten per resultaat, onafhankelijk van de sterkte van de tegenstander. Enkele doorgang, deterministisch.
 
 **Constructors:**
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/standard"
+import "github.com/analyzethat/chesspairing/scoring/standard"
 
 // Vanuit een generieke optiemap:
 scorer := standard.NewFromMap(nil) // alle standaardwaarden
@@ -85,7 +85,7 @@ Elk bye-type wordt op een eigen optie afgebeeld: `ByePAB` op `PointBye`, `ByeHal
 
 ### Keizer
 
-**Pakket:** `github.com/gnutterts/chesspairing/scoring/keizer`
+**Pakket:** `github.com/analyzethat/chesspairing/scoring/keizer`
 
 Bij Keizer-scoring krijgt elke speler een waardenummer gebaseerd op zijn huidige rang. Een sterke tegenstander verslaan (hoog waardenummer) levert meer punten op dan een zwakkere verslaan. Afwezigheden ontvangen een fractie van het eigen waardenummer van de speler.
 
@@ -94,7 +94,7 @@ Het algoritme is iteratief: scores bepalen rangschikkingen, die waardenummers be
 **Constructors:**
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/keizer"
+import "github.com/analyzethat/chesspairing/scoring/keizer"
 
 // Vanuit een generieke optiemap:
 scorer := keizer.NewFromMap(nil) // KeizerForClubs standaardwaarden
@@ -141,7 +141,7 @@ Zes vaste-waarde-overschrijvingsvelden (`ByeFixedValue`, `HalfByeFixedValue`, `Z
 
 ### Football
 
-**Pakket:** `github.com/gnutterts/chesspairing/scoring/football`
+**Pakket:** `github.com/analyzethat/chesspairing/scoring/football`
 
 Dunne wrapper rond standaardscoring met football-standaardwaarden: 3 voor winst, 1 voor remise, 0 voor verlies. Beloont beslissende resultaten sterker dan standaardscoring.
 
@@ -150,7 +150,7 @@ Football gebruikt `standard.Options` rechtstreeks -- er is geen apart `football.
 **Constructors:**
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/football"
+import "github.com/analyzethat/chesspairing/scoring/football"
 
 // Vanuit een generieke optiemap:
 scorer := football.NewFromMap(nil) // football standaardwaarden (3-1-0)
@@ -195,8 +195,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/scoring/standard"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/scoring/standard"
 )
 
 func main() {

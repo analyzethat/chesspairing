@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 // TestParseChesspairingDirective_byeRoundTrip checks that a typed bye

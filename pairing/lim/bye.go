@@ -6,7 +6,7 @@ package lim
 import (
 	"sort"
 
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 // LimByeSelector selects the bye player per Lim system rules (Art. 1.1):

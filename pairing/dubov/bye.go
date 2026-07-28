@@ -6,7 +6,7 @@ package dubov
 import (
 	"sort"
 
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 // DubovByeSelector selects the bye player per Dubov system rules (Art. 2.3):

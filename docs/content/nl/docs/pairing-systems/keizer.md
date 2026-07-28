@@ -29,7 +29,7 @@ chesspairing pair --keizer tournament.trf
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/keizer"
+import "github.com/analyzethat/chesspairing/pairing/keizer"
 
 // Met getypeerde opties
 p := keizer.New(keizer.Options{

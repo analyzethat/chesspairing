@@ -14,7 +14,7 @@ description: "Hoe je kunt bijdragen aan het chesspairing-project."
 
 ```bash
 # Clone
-git clone https://github.com/gnutterts/chesspairing.git
+git clone https://github.com/analyzethat/chesspairing.git
 cd chesspairing
 
 # Run tests
@@ -63,7 +63,7 @@ go test -race -count=1 ./...
 ## Licentie voor bijdragen
 
 Door een pull request of patch in te dienen, ga je ermee akkoord dat je bijdrage
-gelicenseerd is onder de [Apache License 2.0](https://github.com/gnutterts/chesspairing/blob/main/LICENSE),
+gelicenseerd is onder de [Apache License 2.0](https://github.com/analyzethat/chesspairing/blob/main/LICENSE),
 dezelfde licentie als de rest van dit project. Zie Sectie 5 van de licentie
 voor details.
 
@@ -78,4 +78,4 @@ De volgende gebieden kunnen baat hebben bij bijdragen:
 
 ## Problemen melden
 
-Maak issues aan op [https://github.com/gnutterts/chesspairing/issues](https://github.com/gnutterts/chesspairing/issues). Vermeld bij bugs de invoerdata (TRF-bestand of `TournamentState`-constructie) en de verwachte versus daadwerkelijke uitvoer.
+Maak issues aan op [https://github.com/analyzethat/chesspairing/issues](https://github.com/analyzethat/chesspairing/issues). Vermeld bij bugs de invoerdata (TRF-bestand of `TournamentState`-constructie) en de verwachte versus daadwerkelijke uitvoer.

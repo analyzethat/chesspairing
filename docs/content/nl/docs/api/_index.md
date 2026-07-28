@@ -5,11 +5,11 @@ weight: 70
 description: "Handgeschreven API-documentatie voor de chesspairing Go-module — typen, interfaces en gebruikspatronen."
 ---
 
-Dit is handgeschreven API-documentatie voor de `github.com/gnutterts/chesspairing` Go-module. De broncode is de enige bron van waarheid; deze pagina's beschrijven wat de code doet, niet andersom.
+Dit is handgeschreven API-documentatie voor de `github.com/analyzethat/chesspairing` Go-module. De broncode is de enige bron van waarheid; deze pagina's beschrijven wat de code doet, niet andersom.
 
 ## Module-informatie
 
-- **Modulepad**: `github.com/gnutterts/chesspairing`
+- **Modulepad**: `github.com/analyzethat/chesspairing`
 - **Go-versie**: 1.24
 - **Externe afhankelijkheden**: geen (alleen stdlib)
 

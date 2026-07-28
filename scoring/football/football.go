@@ -15,8 +15,8 @@ package football
 import (
 	"context"
 
-	"github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/scoring/standard"
+	"github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/scoring/standard"
 )
 
 // Scorer implements the chesspairing.Scorer interface for football scoring.

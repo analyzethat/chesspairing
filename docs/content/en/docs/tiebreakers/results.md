@@ -134,8 +134,8 @@ Only OTB games contribute (via `buildOpponentData()`). Forfeits, byes, and games
 import (
     "context"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Games Won (OTB only)

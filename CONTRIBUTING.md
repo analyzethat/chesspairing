@@ -37,6 +37,6 @@ on the documentation site.
 
 ## Reporting issues
 
-File issues at <https://github.com/gnutterts/chesspairing/issues>. Include
+File issues at <https://github.com/analyzethat/chesspairing/issues>. Include
 the input data (TRF file or TournamentState construction) and the expected
 vs. actual output when reporting bugs.

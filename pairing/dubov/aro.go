@@ -6,7 +6,7 @@ package dubov
 import (
 	"sort"
 
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 // ComputeARO returns the Average Rating of Opponents for a player.

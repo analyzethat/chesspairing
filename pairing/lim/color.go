@@ -3,7 +3,7 @@
 
 package lim
 
-import "github.com/gnutterts/chesspairing/pairing/swisslib"
+import "github.com/analyzethat/chesspairing/pairing/swisslib"
 
 // AllocateColor decides which player gets White and which gets Black
 // for a specific pairing, implementing Art. 5 with median-aware tiebreaking.

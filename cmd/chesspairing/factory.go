@@ -7,8 +7,8 @@ package main
 import (
 	"strings"
 
-	cp "github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/factory"
+	cp "github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/factory"
 )
 
 // systemFlags maps CLI flag strings to PairingSystem constants. The CLI

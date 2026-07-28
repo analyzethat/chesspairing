@@ -6,7 +6,7 @@ package tiebreaker
 import (
 	"context"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 func init() {

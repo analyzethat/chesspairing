@@ -5,7 +5,7 @@ weight: 2
 description: "Versiegeschiedenis en belangrijke wijzigingen."
 ---
 
-De canonieke changelog staat in [`CHANGELOG.md`](https://github.com/gnutterts/chesspairing/blob/main/CHANGELOG.md) in de hoofdmap van de repository. Deze volgt losjes het [Keep a Changelog](https://keepachangelog.com/)-formaat en Semantic Versioning.
+De canonieke changelog staat in [`CHANGELOG.md`](https://github.com/analyzethat/chesspairing/blob/main/CHANGELOG.md) in de hoofdmap van de repository. Deze volgt losjes het [Keep a Changelog](https://keepachangelog.com/)-formaat en Semantic Versioning.
 
 ## Laatste release: v0.2.0 (20-04-2026)
 

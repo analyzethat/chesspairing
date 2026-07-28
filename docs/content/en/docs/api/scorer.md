@@ -48,14 +48,14 @@ Both apply defaults for any unset (nil) fields. See [Options Pattern](../options
 
 ### Standard
 
-**Package:** `github.com/gnutterts/chesspairing/scoring/standard`
+**Package:** `github.com/analyzethat/chesspairing/scoring/standard`
 
 Standard FIDE scoring: fixed points per result, independent of opponent strength. Single pass, deterministic.
 
 **Constructors:**
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/standard"
+import "github.com/analyzethat/chesspairing/scoring/standard"
 
 // From a generic options map:
 scorer := standard.NewFromMap(nil) // all defaults
@@ -85,7 +85,7 @@ Each bye type maps to its own option: `ByePAB` to `PointBye`, `ByeHalf` to `Poin
 
 ### Keizer
 
-**Package:** `github.com/gnutterts/chesspairing/scoring/keizer`
+**Package:** `github.com/analyzethat/chesspairing/scoring/keizer`
 
 In Keizer scoring, each player gets a value number based on their current rank. Beating a strong opponent (high value number) earns more points than beating a weaker one. Absences receive a fraction of the player's own value number.
 
@@ -94,7 +94,7 @@ The algorithm is iterative: scores determine rankings, which determine value num
 **Constructors:**
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/keizer"
+import "github.com/analyzethat/chesspairing/scoring/keizer"
 
 // From a generic options map:
 scorer := keizer.NewFromMap(nil) // KeizerForClubs defaults
@@ -141,7 +141,7 @@ Six fixed-value override fields (`ByeFixedValue`, `HalfByeFixedValue`, `ZeroByeF
 
 ### Football
 
-**Package:** `github.com/gnutterts/chesspairing/scoring/football`
+**Package:** `github.com/analyzethat/chesspairing/scoring/football`
 
 Thin wrapper around Standard scoring with football defaults: 3 for a win, 1 for a draw, 0 for a loss. Rewards decisive results more heavily than standard scoring.
 
@@ -150,7 +150,7 @@ Football uses `standard.Options` directly -- there is no separate `football.Opti
 **Constructors:**
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/football"
+import "github.com/analyzethat/chesspairing/scoring/football"
 
 // From a generic options map:
 scorer := football.NewFromMap(nil) // football defaults (3-1-0)
@@ -195,8 +195,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/scoring/standard"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/scoring/standard"
 )
 
 func main() {

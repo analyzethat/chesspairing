@@ -51,8 +51,8 @@ Uses the player's registered rating as the tiebreak value. Higher rating ranks h
 import (
     "context"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Pairing Number (lower TPN = higher value)

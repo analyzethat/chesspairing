@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 // Tournament setup for most tests:

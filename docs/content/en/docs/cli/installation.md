@@ -10,7 +10,7 @@ description: "How to install the chesspairing CLI tool."
 With Go 1.24 or later installed:
 
 ```bash
-go install github.com/gnutterts/chesspairing/cmd/chesspairing@latest
+go install github.com/analyzethat/chesspairing/cmd/chesspairing@latest
 ```
 
 This builds the binary and places it in `$GOBIN` (usually `$HOME/go/bin`). Make sure that directory is on your `PATH`.
@@ -20,7 +20,7 @@ This builds the binary and places it in `$GOBIN` (usually `$HOME/go/bin`). Make 
 Clone the repository and build manually:
 
 ```bash
-git clone https://github.com/gnutterts/chesspairing.git
+git clone https://github.com/analyzethat/chesspairing.git
 cd chesspairing
 go build -o chesspairing ./cmd/chesspairing
 ```
@@ -60,7 +60,7 @@ Tiebreakers:      25 available
 If you want to use chesspairing as a Go library rather than a CLI tool, add it to your module:
 
 ```bash
-go get github.com/gnutterts/chesspairing@latest
+go get github.com/analyzethat/chesspairing@latest
 ```
 
 See the [Go Quickstart](/docs/getting-started/go-quickstart/) for library usage.

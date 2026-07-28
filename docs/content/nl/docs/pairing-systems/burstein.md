@@ -30,7 +30,7 @@ De `--burstein`-vlag selecteert de Burstein-indelingsengine. Het uitvoerformaat 
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/burstein"
+import "github.com/analyzethat/chesspairing/pairing/burstein"
 
 // Met getypeerde opties
 p := burstein.New(burstein.Options{

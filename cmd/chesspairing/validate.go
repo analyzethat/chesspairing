@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/gnutterts/chesspairing/trf"
+	"github.com/analyzethat/chesspairing/trf"
 )
 
 var profileMap = map[string]trf.ValidationProfile{

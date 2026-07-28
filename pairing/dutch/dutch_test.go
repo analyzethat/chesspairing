@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
-	trfpkg "github.com/gnutterts/chesspairing/trf"
+	"github.com/analyzethat/chesspairing"
+	trfpkg "github.com/analyzethat/chesspairing/trf"
 )
 
 func TestPair_Round1_4Players(t *testing.T) {

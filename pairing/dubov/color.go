@@ -4,7 +4,7 @@
 package dubov
 
 import (
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 // AllocateColor decides which player gets White and which gets Black

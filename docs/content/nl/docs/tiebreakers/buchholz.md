@@ -108,8 +108,8 @@ Een speler met tegenstanders die [2.0, 3.0, 3.5, 4.0, 5.0] scoorden:
 import (
     "context"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Full Buchholz

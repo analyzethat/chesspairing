@@ -3,7 +3,7 @@
 
 package lim
 
-import "github.com/gnutterts/chesspairing/pairing/swisslib"
+import "github.com/analyzethat/chesspairing/pairing/swisslib"
 
 // ColourExchange performs the Art. 5.2 second scrutiny: after ExchangeMatch
 // has established legal pairings, this pass swaps opponents between pairs to

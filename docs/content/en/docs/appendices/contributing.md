@@ -14,7 +14,7 @@ description: "How to contribute to the chesspairing project."
 
 ```bash
 # Clone
-git clone https://github.com/gnutterts/chesspairing.git
+git clone https://github.com/analyzethat/chesspairing.git
 cd chesspairing
 
 # Run tests
@@ -63,7 +63,7 @@ go test -race -count=1 ./...
 ## License for contributions
 
 By submitting a pull request or patch, you agree that your contribution is
-licensed under the [Apache License 2.0](https://github.com/gnutterts/chesspairing/blob/main/LICENSE),
+licensed under the [Apache License 2.0](https://github.com/analyzethat/chesspairing/blob/main/LICENSE),
 the same license that covers the rest of this project. See Section 5 of the
 license for details.
 
@@ -78,4 +78,4 @@ The following areas could benefit from contributions:
 
 ## Reporting Issues
 
-File issues at [https://github.com/gnutterts/chesspairing/issues](https://github.com/gnutterts/chesspairing/issues). Include the input data (TRF file or `TournamentState` construction) and the expected vs. actual output when reporting bugs.
+File issues at [https://github.com/analyzethat/chesspairing/issues](https://github.com/analyzethat/chesspairing/issues). Include the input data (TRF file or `TournamentState` construction) and the expected vs. actual output when reporting bugs.

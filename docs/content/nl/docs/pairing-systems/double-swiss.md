@@ -28,7 +28,7 @@ chesspairing pair --double-swiss tournament.trf
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/doubleswiss"
+import "github.com/analyzethat/chesspairing/pairing/doubleswiss"
 
 // Met getypeerde opties
 p := doubleswiss.New(doubleswiss.Options{

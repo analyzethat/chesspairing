@@ -7,7 +7,7 @@ description: "What chesspairing is and how its components fit together."
 
 ## What is chesspairing?
 
-Chesspairing is a pure Go module (`github.com/gnutterts/chesspairing`) that handles three core tournament operations: **pairing** (deciding who plays whom), **scoring** (turning game results into standings), and **tiebreaking** (separating players with equal scores).
+Chesspairing is a pure Go module (`github.com/analyzethat/chesspairing`) that handles three core tournament operations: **pairing** (deciding who plays whom), **scoring** (turning game results into standings), and **tiebreaking** (separating players with equal scores).
 
 It has zero external dependencies -- the entire module runs on the Go standard library alone. There is no I/O, no database access, and no network communication. Every engine operates on in-memory data structures, which makes it straightforward to embed in a server, desktop application, or automated pipeline. It is safe for concurrent use when each goroutine supplies its own tournament state.
 
@@ -124,7 +124,7 @@ See the [CLI Quickstart](/docs/getting-started/cli-quickstart/) to get started, 
 Add the module to your project:
 
 ```bash
-go get github.com/gnutterts/chesspairing
+go get github.com/analyzethat/chesspairing
 ```
 
 Then construct a `TournamentState`, pick your engines, and call them:
@@ -132,9 +132,9 @@ Then construct a `TournamentState`, pick your engines, and call them:
 ```go
 import (
     "context"
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/pairing/dutch"
-    "github.com/gnutterts/chesspairing/scoring/standard"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/pairing/dutch"
+    "github.com/analyzethat/chesspairing/scoring/standard"
 )
 
 state := &chesspairing.TournamentState{
