@@ -1,5 +1,8 @@
 // Copyright 2026 Gert Nutterts
 // SPDX-License-Identifier: Apache-2.0
+//
+// Modified in the analyzethat fork: added ValidateResult, and wired it into
+// the pairers so a result that drops players is reported instead of returned.
 
 package swisslib
 
@@ -59,5 +62,51 @@ func ValidatePairing(players []PlayerState, result *chesspairing.PairingResult) 
 		}
 	}
 
+	// A round carries exactly one pairing-allocated bye when the field is odd
+	// and none when it is even. Handing out more is how a pairer can satisfy
+	// every check above while having paired nobody at all.
+	pab := 0
+	for _, bye := range result.Byes {
+		if bye.Type == chesspairing.ByePAB {
+			pab++
+		}
+	}
+	if pab != len(activeIDs)%2 {
+		return fmt.Errorf("%d pairing-allocated byes for %d active players", pab, len(activeIDs))
+	}
+
 	return nil
+}
+
+// ValidateResult checks a pairer's own output on the way out, against the
+// players that entered its matching pool. Bye entries for players filtered out
+// beforehand are the caller's input rather than the pairer's output, so they
+// are excluded from the check.
+//
+// A Swiss system can legitimately run out of legal pairings — with a small
+// field and many rounds every opponent eventually gets used up. FIDE C.04.3
+// article 1.9.3 leaves that to the Chief Arbiter, which a library cannot
+// decide. What it must not do is return a result in which active players
+// silently go missing: a caller that trusts a nil error records a round with
+// players dropped from it. This turns that into an error the caller can act on.
+func ValidateResult(players []PlayerState, preAssigned []chesspairing.ByeEntry, result *chesspairing.PairingResult) error {
+	if result == nil {
+		return fmt.Errorf("pairer returned no result")
+	}
+	if len(preAssigned) == 0 {
+		return ValidatePairing(players, result)
+	}
+
+	skip := make(map[string]bool, len(preAssigned))
+	for _, b := range preAssigned {
+		skip[b.PlayerID] = true
+	}
+	trimmed := *result
+	trimmed.Byes = make([]chesspairing.ByeEntry, 0, len(result.Byes))
+	for _, b := range result.Byes {
+		if !skip[b.PlayerID] {
+			trimmed.Byes = append(trimmed.Byes, b)
+		}
+	}
+	return ValidatePairing(players, &trimmed)
 }
