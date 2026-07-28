@@ -7,6 +7,30 @@ reaches a tagged release.
 
 ## [Unreleased]
 
+## [0.3.0] — 2026-07-28
+
+First release of the `analyzethat` fork of
+[gnutterts/chesspairing](https://github.com/gnutterts/chesspairing).
+
+### Changed
+
+- **Module path is now `github.com/analyzethat/chesspairing`.** Consumers of
+  the upstream module must update their import paths, or add a `replace`
+  directive. Tags v0.1.0 through v0.2.2 were inherited from upstream and
+  declare the old module path; they cannot be resolved under the new path.
+  Start at v0.3.0.
+- Repository, issue and documentation URLs point at the fork. `LICENSE` and
+  the per-file SPDX headers carrying the original copyright are unchanged;
+  `NOTICE` records the modifications as required by Apache-2.0 section 4(b).
+
+### Fixed
+
+- TRF section 240 now supports the Zero-Point Bye type `Z`, in both the
+  reading and the emitting path. FIDE TRF-2026 lists `F`, `H` and `Z` as
+  valid bye types; only `F` and `H` were handled. Contributed upstream as
+  [gnutterts/chesspairing#1](https://github.com/gnutterts/chesspairing/pull/1)
+  by Tomasz Żyźniewski and cherry-picked here while that PR is open.
+
 ## [0.2.2] — 2026-04-21
 
 CI maintenance release. No library or CLI changes.
@@ -232,7 +256,8 @@ Highlights:
 - Bilingual (EN/NL) documentation site at https://chesspairing.nl
 - Apache-2.0 licensing with SPDX headers throughout
 
-[Unreleased]: https://github.com/analyzethat/chesspairing/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/analyzethat/chesspairing/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/analyzethat/chesspairing/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/analyzethat/chesspairing/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/analyzethat/chesspairing/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/analyzethat/chesspairing/compare/v0.0.0...v0.2.0
