@@ -6,7 +6,7 @@ package swisslib
 import (
 	"math/big"
 
-	"github.com/gnutterts/chesspairing/algorithm/blossom"
+	"github.com/analyzethat/chesspairing/algorithm/blossom"
 )
 
 // PairBracketsGlobal performs global Blossom matching across all score groups.

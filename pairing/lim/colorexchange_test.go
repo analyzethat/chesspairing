@@ -6,7 +6,7 @@ package lim
 import (
 	"testing"
 
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 // conflictCount returns the total number of colour conflicts across all pairs.

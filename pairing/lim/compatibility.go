@@ -3,7 +3,7 @@
 
 package lim
 
-import "github.com/gnutterts/chesspairing/pairing/swisslib"
+import "github.com/analyzethat/chesspairing/pairing/swisslib"
 
 // CanReceiveColor returns true if the player can legally be assigned the
 // given colour without violating Art. 2.1 (compatibility statement):

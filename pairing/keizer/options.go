@@ -4,8 +4,8 @@
 package keizer
 
 import (
-	"github.com/gnutterts/chesspairing"
-	keizerscoring "github.com/gnutterts/chesspairing/scoring/keizer"
+	"github.com/analyzethat/chesspairing"
+	keizerscoring "github.com/analyzethat/chesspairing/scoring/keizer"
 )
 
 // Options holds configurable settings for Keizer pairing.

@@ -7,8 +7,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/factory"
+	"github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/factory"
 )
 
 func TestNewPairer_AllNames(t *testing.T) {

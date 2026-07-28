@@ -3,7 +3,7 @@
 
 package doubleswiss
 
-import "github.com/gnutterts/chesspairing/pairing/lexswiss"
+import "github.com/analyzethat/chesspairing/pairing/lexswiss"
 
 // AllocateColor decides which participant gets White in Game 1 of the
 // match and which gets Black, implementing Art. 4 of the Double-Swiss system.

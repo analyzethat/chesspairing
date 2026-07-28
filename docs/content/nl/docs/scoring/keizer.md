@@ -30,7 +30,7 @@ chesspairing pair --config '{"scoring": {"winFraction": 1.0, "drawFraction": 0.5
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/keizer"
+import "github.com/analyzethat/chesspairing/scoring/keizer"
 
 // Met expliciete opties (nil-velden gebruiken standaardwaarden).
 scorer := keizer.New(keizer.Options{

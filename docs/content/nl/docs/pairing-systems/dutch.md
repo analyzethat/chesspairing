@@ -29,7 +29,7 @@ De `--dutch`-vlag selecteert de Dutch-indelingsengine. Het uitvoerformaat wordt 
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/dutch"
+import "github.com/analyzethat/chesspairing/pairing/dutch"
 
 // Met getypeerde opties
 p := dutch.New(dutch.Options{

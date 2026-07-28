@@ -46,7 +46,7 @@ any tiebreaker by string ID.
 ## Use as a Go library
 
 ```
-go get github.com/gnutterts/chesspairing
+go get github.com/analyzethat/chesspairing
 ```
 
 ```go
@@ -82,7 +82,7 @@ command-line conventions.
 ## Documentation
 
 Full documentation is available at
-**[gnutterts.github.io/chesspairing](https://gnutterts.github.io/chesspairing/)** —
+**[analyzethat.github.io/chesspairing](https://analyzethat.github.io/chesspairing/)** —
 including getting started guides, API reference, algorithm deep-dives with
 mathematical notation, and FIDE regulation mappings.
 

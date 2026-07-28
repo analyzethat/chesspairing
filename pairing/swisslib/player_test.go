@@ -6,7 +6,7 @@ package swisslib
 import (
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 func TestBuildPlayerStates_Round1_NoHistory(t *testing.T) {

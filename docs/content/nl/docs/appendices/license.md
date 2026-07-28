@@ -15,11 +15,11 @@ commerciele doeleinden. De licentie vereist dat je:
 - Een kopie van de licentie meelevert bij elke verspreiding.
 - Aangeeft welke wijzigingen je in de bestanden hebt aangebracht.
 - Copyright-, patent-, handelsmerk- en naamsvermelding behoudt.
-- De inhoud van het [NOTICE](https://github.com/gnutterts/chesspairing/blob/main/NOTICE)-bestand opneemt in afgeleide werken.
+- De inhoud van het [NOTICE](https://github.com/analyzethat/chesspairing/blob/main/NOTICE)-bestand opneemt in afgeleide werken.
 
 ## Volledige tekst
 
 De volledige licentie en copyrightvermelding staan in de repository:
 
-- [LICENSE](https://github.com/gnutterts/chesspairing/blob/main/LICENSE) (Apache License 2.0)
-- [NOTICE](https://github.com/gnutterts/chesspairing/blob/main/NOTICE) (copyrightvermelding)
+- [LICENSE](https://github.com/analyzethat/chesspairing/blob/main/LICENSE) (Apache License 2.0)
+- [NOTICE](https://github.com/analyzethat/chesspairing/blob/main/NOTICE) (copyrightvermelding)

@@ -32,7 +32,7 @@ chesspairing pair --config '{"scoring": {"pointWin": 1.0, "pointDraw": 0.5, "poi
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/scoring/standard"
+import "github.com/analyzethat/chesspairing/scoring/standard"
 
 // With explicit options (nil fields use defaults).
 scorer := standard.New(standard.Options{

@@ -4,7 +4,7 @@
 package standard
 
 import (
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 // Options holds configurable settings for standard (1-½-0) scoring.

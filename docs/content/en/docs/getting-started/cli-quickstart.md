@@ -18,7 +18,7 @@ go version
 ## Install
 
 ```bash
-go install github.com/gnutterts/chesspairing/cmd/chesspairing@latest
+go install github.com/analyzethat/chesspairing/cmd/chesspairing@latest
 ```
 
 Make sure `$GOPATH/bin` (or `$HOME/go/bin`) is on your `PATH`. Confirm the installation:

@@ -30,7 +30,7 @@ The `--burstein` flag selects the Burstein pairing engine. Output format is cont
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/burstein"
+import "github.com/analyzethat/chesspairing/pairing/burstein"
 
 // From typed options
 p := burstein.New(burstein.Options{

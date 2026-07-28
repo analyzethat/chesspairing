@@ -6,7 +6,7 @@ package lexswiss
 import (
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 func TestBuildParticipantStates_BasicFourPlayers(t *testing.T) {

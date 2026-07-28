@@ -232,7 +232,7 @@ Highlights:
 - Bilingual (EN/NL) documentation site at https://chesspairing.nl
 - Apache-2.0 licensing with SPDX headers throughout
 
-[Unreleased]: https://github.com/gnutterts/chesspairing/compare/v0.2.2...HEAD
-[0.2.2]: https://github.com/gnutterts/chesspairing/compare/v0.2.1...v0.2.2
-[0.2.1]: https://github.com/gnutterts/chesspairing/compare/v0.2.0...v0.2.1
-[0.2.0]: https://github.com/gnutterts/chesspairing/compare/v0.0.0...v0.2.0
+[Unreleased]: https://github.com/analyzethat/chesspairing/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/analyzethat/chesspairing/compare/v0.2.1...v0.2.2
+[0.2.1]: https://github.com/analyzethat/chesspairing/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/analyzethat/chesspairing/compare/v0.0.0...v0.2.0

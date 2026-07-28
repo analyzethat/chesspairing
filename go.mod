@@ -1,3 +1,3 @@
-module github.com/gnutterts/chesspairing
+module github.com/analyzethat/chesspairing
 
 go 1.25

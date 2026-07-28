@@ -7,7 +7,7 @@ package main
 import (
 	"testing"
 
-	cp "github.com/gnutterts/chesspairing"
+	cp "github.com/analyzethat/chesspairing"
 )
 
 func TestNewPairer_AllSystems(t *testing.T) {

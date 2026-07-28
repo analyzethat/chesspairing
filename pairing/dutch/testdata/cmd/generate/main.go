@@ -15,8 +15,8 @@ import (
 	"runtime"
 	"sort"
 
-	"github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/pairing/dutch"
+	"github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/pairing/dutch"
 )
 
 // GoldenScenario describes a test scenario written to scenario.json.

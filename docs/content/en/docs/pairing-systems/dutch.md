@@ -29,7 +29,7 @@ The `--dutch` flag selects the Dutch pairing engine. Output format is controlled
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/dutch"
+import "github.com/analyzethat/chesspairing/pairing/dutch"
 
 // From typed options
 p := dutch.New(dutch.Options{

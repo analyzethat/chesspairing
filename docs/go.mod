@@ -1,4 +1,4 @@
-module github.com/gnutterts/chesspairing/docs
+module github.com/analyzethat/chesspairing/docs
 
 go 1.26.1
 

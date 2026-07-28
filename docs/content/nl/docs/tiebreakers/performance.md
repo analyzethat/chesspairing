@@ -123,8 +123,8 @@ Als de speler geen partijen aan het bord heeft, is de waarde 0.
 import (
     "context"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Average Rating of Opponents

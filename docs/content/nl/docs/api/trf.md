@@ -5,7 +5,7 @@ weight: 7
 description: "TRF16-bestanden lezen, schrijven en converteren met het trf-pakket."
 ---
 
-Het `trf`-pakket (`github.com/gnutterts/chesspairing/trf`) verzorgt het lezen, schrijven, valideren en converteren van FIDE Tournament Report Files. Het ondersteunt zowel TRF16 (legacy) als TRF-2026.
+Het `trf`-pakket (`github.com/analyzethat/chesspairing/trf`) verzorgt het lezen, schrijven, valideren en converteren van FIDE Tournament Report Files. Het ondersteunt zowel TRF16 (legacy) als TRF-2026.
 
 ## Kerntypen
 

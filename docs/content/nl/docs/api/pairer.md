@@ -31,7 +31,7 @@ Beide passen standaardwaarden toe voor niet-ingestelde (nil) velden. Zie [Optiep
 ### Een pairer aanmaken
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/dutch"
+import "github.com/analyzethat/chesspairing/pairing/dutch"
 
 // Vanuit een generieke optiemap (bijv. geparsed uit JSON-configuratie):
 p := dutch.NewFromMap(nil) // alle standaardwaarden
@@ -112,8 +112,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/pairing/dutch"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/pairing/dutch"
 )
 
 func main() {

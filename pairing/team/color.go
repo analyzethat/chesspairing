@@ -3,7 +3,7 @@
 
 package team
 
-import "github.com/gnutterts/chesspairing/pairing/lexswiss"
+import "github.com/analyzethat/chesspairing/pairing/lexswiss"
 
 // AllocateColor decides which team gets White and which gets Black,
 // implementing the 9-step colour allocation algorithm of Art. 4.

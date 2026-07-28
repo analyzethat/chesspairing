@@ -21,9 +21,9 @@ import (
 	"context"
 	"sort"
 
-	"github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
-	keizerscoring "github.com/gnutterts/chesspairing/scoring/keizer"
+	"github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
+	keizerscoring "github.com/analyzethat/chesspairing/scoring/keizer"
 )
 
 // Pairer implements the chesspairing.Pairer interface for Keizer pairing.

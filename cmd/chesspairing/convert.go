@@ -10,7 +10,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/gnutterts/chesspairing/trf"
+	"github.com/analyzethat/chesspairing/trf"
 )
 
 const convertUsage = `Usage: chesspairing convert input-file -o output-file [options]

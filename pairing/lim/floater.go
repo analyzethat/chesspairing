@@ -6,7 +6,7 @@ package lim
 import (
 	"sort"
 
-	"github.com/gnutterts/chesspairing/pairing/swisslib"
+	"github.com/analyzethat/chesspairing/pairing/swisslib"
 )
 
 // FloaterType classifies a floater per Art. 3.9.

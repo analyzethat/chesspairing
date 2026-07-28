@@ -7,8 +7,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/scoring/standard"
+	"github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/scoring/standard"
 )
 
 func TestNew(t *testing.T) {

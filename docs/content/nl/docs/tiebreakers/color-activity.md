@@ -101,8 +101,8 @@ Let op: deze tiebreaker gebruikt het veld `IsForfeit` op de `GameData`-struct re
 import (
     "context"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Games with Black

@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
-	cp "github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/trf"
+	cp "github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/trf"
 )
 
 func TestFormatPairList(t *testing.T) {

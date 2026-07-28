@@ -33,8 +33,8 @@ import (
 	"fmt"
 	"sort"
 
-	cp "github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/tiebreaker"
+	cp "github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Build composes a Scorer and a list of TieBreakers over a TournamentState

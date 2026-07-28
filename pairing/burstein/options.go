@@ -15,7 +15,7 @@
 package burstein
 
 import (
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 // Pairer implements the chesspairing.Pairer interface for the Burstein Swiss system.

@@ -31,7 +31,7 @@ Both apply defaults for any unset (nil) fields. See [Options Pattern](../options
 ### Creating a pairer
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/dutch"
+import "github.com/analyzethat/chesspairing/pairing/dutch"
 
 // From a generic options map (e.g. parsed from JSON config):
 p := dutch.NewFromMap(nil) // all defaults
@@ -112,8 +112,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/pairing/dutch"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/pairing/dutch"
 )
 
 func main() {

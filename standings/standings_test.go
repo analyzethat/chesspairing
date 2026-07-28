@@ -8,10 +8,10 @@ import (
 	"errors"
 	"testing"
 
-	cp "github.com/gnutterts/chesspairing"
-	"github.com/gnutterts/chesspairing/scoring/standard"
-	"github.com/gnutterts/chesspairing/standings"
-	"github.com/gnutterts/chesspairing/tiebreaker"
+	cp "github.com/analyzethat/chesspairing"
+	"github.com/analyzethat/chesspairing/scoring/standard"
+	"github.com/analyzethat/chesspairing/standings"
+	"github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 func players(ids ...string) []cp.PlayerEntry {

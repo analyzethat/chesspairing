@@ -7,7 +7,7 @@ import (
 	"context"
 	"math"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 func init() {

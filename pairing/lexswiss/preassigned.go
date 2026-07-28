@@ -3,7 +3,7 @@
 
 package lexswiss
 
-import "github.com/gnutterts/chesspairing"
+import "github.com/analyzethat/chesspairing"
 
 // FilterPreAssignedByes mirrors swisslib.FilterPreAssignedByes for
 // lexicographic Swiss systems (team, doubleswiss). See the swisslib

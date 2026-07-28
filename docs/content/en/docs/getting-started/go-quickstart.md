@@ -21,17 +21,17 @@ chesspairing is a pure Go module with zero external dependencies.
 Add the module to your project:
 
 ```bash
-go get github.com/gnutterts/chesspairing
+go get github.com/analyzethat/chesspairing
 ```
 
 Then import the root package and the engine packages you need:
 
 ```go
 import (
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/pairing/dutch"
-    "github.com/gnutterts/chesspairing/scoring/standard"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/pairing/dutch"
+    "github.com/analyzethat/chesspairing/scoring/standard"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 ```
 
@@ -234,10 +234,10 @@ import (
     "fmt"
     "log"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/pairing/dutch"
-    "github.com/gnutterts/chesspairing/scoring/standard"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/pairing/dutch"
+    "github.com/analyzethat/chesspairing/scoring/standard"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 func main() {

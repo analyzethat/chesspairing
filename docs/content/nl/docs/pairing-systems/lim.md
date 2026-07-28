@@ -31,7 +31,7 @@ chesspairing pair --lim tournament.trf
 ### Go API
 
 ```go
-import "github.com/gnutterts/chesspairing/pairing/lim"
+import "github.com/analyzethat/chesspairing/pairing/lim"
 
 // Met getypeerde opties
 p := lim.New(lim.Options{

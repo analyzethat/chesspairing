@@ -76,8 +76,8 @@ Voor elke partij aan het bord in de partijenlijst van de speler:
 import (
     "context"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 // Direct Encounter

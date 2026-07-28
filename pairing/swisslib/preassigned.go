@@ -3,7 +3,7 @@
 
 package swisslib
 
-import "github.com/gnutterts/chesspairing"
+import "github.com/analyzethat/chesspairing"
 
 // FilterPreAssignedByes returns a shallow-copied TournamentState with the
 // players named in state.PreAssignedByes removed from the Players slice,

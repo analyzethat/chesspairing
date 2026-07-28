@@ -9,7 +9,7 @@ description: "Go library and CLI for chess tournament pairing, scoring, and tieb
   <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
     Documentation
   </a>
-  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/gnutterts/chesspairing">
+  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/analyzethat/chesspairing">
     GitHub
   </a>
   <p class="lead mt-4">A Go module for chess tournament pairing, scoring, and tiebreaking.</p>
@@ -33,7 +33,7 @@ Install the tool, feed it a TRF file, get pairings back. Works as a drop-in for 
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-code" title="Go API" url="/docs/getting-started/go-quickstart/" %}}
-`go get github.com/gnutterts/chesspairing` and pair programmatically. No dependencies, safe for concurrent use.
+`go get github.com/analyzethat/chesspairing` and pair programmatically. No dependencies, safe for concurrent use.
 {{% /blocks/feature %}}
 
 {{< /blocks/section >}}

@@ -41,7 +41,7 @@ The returned slice contains one entry per player in `scores`, in the same order.
 Tiebreakers self-register via `init()` functions. The `tiebreaker` package exposes three registry functions:
 
 ```go
-import "github.com/gnutterts/chesspairing/tiebreaker"
+import "github.com/analyzethat/chesspairing/tiebreaker"
 
 // Get a tiebreaker by ID.
 tb, err := tiebreaker.Get("buchholz-cut1")
@@ -102,7 +102,7 @@ This ensures forfeits do not distort tiebreak calculations.
 The root package provides FIDE-recommended tiebreaker sequences per pairing system:
 
 ```go
-import "github.com/gnutterts/chesspairing"
+import "github.com/analyzethat/chesspairing"
 
 tbs := chesspairing.DefaultTiebreakers(chesspairing.PairingDutch)
 // Returns: ["buchholz-cut1", "buchholz", "sonneborn-berger", "direct-encounter"]
@@ -128,9 +128,9 @@ import (
     "fmt"
     "log"
 
-    "github.com/gnutterts/chesspairing"
-    "github.com/gnutterts/chesspairing/scoring/standard"
-    "github.com/gnutterts/chesspairing/tiebreaker"
+    "github.com/analyzethat/chesspairing"
+    "github.com/analyzethat/chesspairing/scoring/standard"
+    "github.com/analyzethat/chesspairing/tiebreaker"
 )
 
 func main() {

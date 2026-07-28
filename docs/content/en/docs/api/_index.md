@@ -5,11 +5,11 @@ weight: 70
 description: "Hand-written API documentation for the chesspairing Go module — types, interfaces, and usage patterns."
 ---
 
-This is hand-written API documentation for the `github.com/gnutterts/chesspairing` Go module. The code is the single source of truth; these pages describe what the code does, not the other way around.
+This is hand-written API documentation for the `github.com/analyzethat/chesspairing` Go module. The code is the single source of truth; these pages describe what the code does, not the other way around.
 
 ## Module info
 
-- **Module path**: `github.com/gnutterts/chesspairing`
+- **Module path**: `github.com/analyzethat/chesspairing`
 - **Go version**: 1.24
 - **External dependencies**: none (stdlib only)
 

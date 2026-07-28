@@ -5,7 +5,7 @@ weight: 7
 description: "Reading, writing, and converting TRF16 files with the trf package."
 ---
 
-The `trf` package (`github.com/gnutterts/chesspairing/trf`) handles reading, writing, validating, and converting FIDE Tournament Report Files. It supports both TRF16 (legacy) and TRF-2026 formats.
+The `trf` package (`github.com/analyzethat/chesspairing/trf`) handles reading, writing, validating, and converting FIDE Tournament Report Files. It supports both TRF16 (legacy) and TRF-2026 formats.
 
 ## Core types
 

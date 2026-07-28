@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 // buildKeizerState creates a tournament state with n players and r rounds.

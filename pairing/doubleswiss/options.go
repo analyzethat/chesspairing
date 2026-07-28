@@ -16,7 +16,7 @@
 //   - Colour allocation with 5-step priority (Art. 4)
 package doubleswiss
 
-import "github.com/gnutterts/chesspairing"
+import "github.com/analyzethat/chesspairing"
 
 // Pairer implements the chesspairing.Pairer interface for the Double-Swiss system.
 type Pairer struct {

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gnutterts/chesspairing"
+	"github.com/analyzethat/chesspairing"
 )
 
 func TestGameResult_IsValid(t *testing.T) {
